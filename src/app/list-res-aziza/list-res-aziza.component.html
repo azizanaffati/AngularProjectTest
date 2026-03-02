@@ -1,0 +1,17 @@
+<div class="card" style="width: 18rem;" *ngFor="let r of  residenceList">
+    <div class="card-body">
+      <h5 class="card-title">{{r.name}}</h5>
+      <p>
+        {{r. address}}
+      </p>
+      <p>
+        {{r.status}}
+      </p>
+      <p class="card-text">{{r.created_at }}</p>
+      <p class="card-text">{{r.updated_at }}</p>
+    </div>
+    <div >
+        <button class="btn btn-primary" [routerLink]="['/details', r.id]">details</button>
+<button class="btn btn-primary" [routerLink]="['/update', r.id]">update</button>
+    <button class="btn btn-danger" (click)="deleteRes(r.id)">delete</button>      </div>
+</div>

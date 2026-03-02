@@ -1,0 +1,34 @@
+<form [formGroup]="resform">
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">Name</span>
+        </div>
+    <input type="text" class="form-control" formControlName="name">
+</div>
+<br>
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">status</span>
+        </div>
+        <input type="text" class="form-control" formControlName="status">
+      </div>
+    <br>
+
+   
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">address</span>
+        </div>
+        <input type="text" class="form-control" formControlName="address">
+      </div>
+      
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="">image</span>
+        </div>
+        <input type="text" class="form-control" formControlName="image">
+      </div>
+
+    <button class="btn btn-primary" (click)="update()">update</button>
+</form>
